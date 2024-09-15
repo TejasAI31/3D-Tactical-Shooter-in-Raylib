@@ -724,16 +724,16 @@ void renderworld(Shader shader)
 
 	if (worldinit == false)
 	{
-		floortexture = LoadTextureFromImage(LoadImage("C:/Users/Lenovo/Downloads/jpg2png/gravel_concrete_03_diff_1k.png"));
+		floortexture = LoadTextureFromImage(LoadImage("../Textures/gravel_concrete_03_diff_1k.png"));
 		DisableCursor();
 		initializeWorldCells();
 		initializeEntities();
 		initializeModels(shader);
 		worldplayerpos = { 50,playerheight/2,50 };
 
-		zombie.SetPath(currentworldcell);
+		//zombie.SetPath(currentworldcell);
 
-		gunmodel = LoadModel("C:/Users/Lenovo/source/repos/Raycasting/Models/41-pistol-beretta/Pistol Beretta/Pistol_Model.glb");
+		gunmodel = LoadModel("../Models/41-pistol-beretta/Pistol Beretta/Pistol_Model.glb");
 
 		worldinit = true;
 		
@@ -759,7 +759,7 @@ void renderworld(Shader shader)
 		updateenemyanimations();
 		updateCam(checkcollision());
 		worldPlayerMovement();
-		zombie.Move();
+		//zombie.Move();
 
 		checkcurrentworldcell();
 

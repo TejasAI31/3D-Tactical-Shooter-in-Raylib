@@ -3,7 +3,7 @@
 #include "WorldResources.h"
 #include <vector>
 
-#define speed 100
+#define speed 50
 
 using namespace std;
 
@@ -90,8 +90,8 @@ public:
 
 	void InitiateZombie(float a,float b,float c)
 	{
-		model = LoadModel("C:/Users/Lenovo/source/repos/Raycasting/Models/Zombie.glb");
-		animations = LoadModelAnimations("C:/Users/Lenovo/source/repos/Raycasting/Models/Zombie.glb", &animcount);
+		model = LoadModel("../Models/Zombie.glb");
+		animations = LoadModelAnimations("../Models/Zombie.glb", &animcount);
 		position = { a,b,c };
 		setCurrentCell();
 		updateHitbox();

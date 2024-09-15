@@ -19,8 +19,8 @@
 #define worldwallcolor BROWN
 #define worldwallobjectbuffer 2
 
-#define heightcells 5
-#define widthcells 5
+#define heightcells 10
+#define widthcells 10
 
 #define maxlightdistance cellside*1.5
 
